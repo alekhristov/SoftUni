@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _08_Rubik_sMatrix
 {
@@ -16,7 +13,6 @@ namespace _08_Rubik_sMatrix
                 .ToArray();
 
             var matrix = new int[matrixSize[0], matrixSize[1]];
-            var initialMatrix = new int[matrixSize[0], matrixSize[1]];
             var counter = 1;
 
             for (int row = 0; row < matrix.GetLength(0); row++)
@@ -27,7 +23,7 @@ namespace _08_Rubik_sMatrix
                     counter++;
                 }
             }
-            initialMatrix = (int[,])matrix.Clone();
+            var initialMatrix = (int[,])matrix.Clone();
 
             var n = int.Parse(Console.ReadLine());
 
@@ -75,41 +71,43 @@ namespace _08_Rubik_sMatrix
                         break;
 
                     case "up":
+                        var currentColumn = rowOrColumn;
                         for (int j = 0; j < numberOfMoves; j++)
                         {
-                            var firstElement = matrix[0, rowOrColumn];
+                            var firstElement = matrix[0, currentColumn];
                             for (int row = 0; row < matrix.GetLength(0); row++)
                             {
                                 if (row == matrix.GetLength(0) - 1)
                                 {
-                                    matrix[row, rowOrColumn] = firstElement;
+                                    matrix[row, currentColumn] = firstElement;
                                     break;
                                 }
-                                matrix[row, rowOrColumn] = matrix[row + 1, rowOrColumn];
+                                matrix[row, currentColumn] = matrix[row + 1, currentColumn];
                             }
                         }
                         break;
 
                     case "down":
+                        currentColumn = rowOrColumn;
                         for (int j = 0; j < numberOfMoves; j++)
                         {
-                            var lastElement = matrix[matrix.GetLength(0) - 1, rowOrColumn];
+                            var lastElement = matrix[matrix.GetLength(0) - 1, currentColumn];
                             for (int row = matrix.GetLength(0) - 1; row >= 0; row--)
                             {
                                 if (row == 0)
                                 {
-                                    matrix[row, rowOrColumn] = lastElement;
+                                    matrix[row, currentColumn] = lastElement;
                                     break;
                                 }
-                                matrix[row, rowOrColumn] = matrix[row - 1, rowOrColumn];
+                                matrix[row, currentColumn] = matrix[row - 1, currentColumn];
                             }
                         }
                         break;
                     default:
                         break;
                 }
-            }
 
+            }
             bool needsToBreak = false;
 
             for (int row = 0; row < matrix.GetLength(0); row++)
@@ -124,7 +122,12 @@ namespace _08_Rubik_sMatrix
                             {
                                 if (initialMatrix[row, col] == matrix[i, j])
                                 {
+                                    var changedValue = matrix[row, col];
+                                    matrix[row, col] = initialMatrix[row, col];
+                                    matrix[i, j] = changedValue;
+
                                     Console.WriteLine($"Swap ({row}, {col}) with ({i}, {j})");
+
                                     needsToBreak = true;
                                     break;
                                 }
