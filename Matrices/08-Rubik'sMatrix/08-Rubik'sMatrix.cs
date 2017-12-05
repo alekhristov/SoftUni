@@ -1,10 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace _08_Rubik_sMatrix
 {
     class Program
     {
+        //static Dictionary<int, int[2]> numberPostions = new Dictionary<int, int[]>()
+        //{
+        //    {1, new int[]{0,0 } },
+        //    {2, new int[]{0,0 } },
+        //    {1, new int[]{0,0 } },
+        //    {1, new int[]{0,0 } },
+        //    {1, new int[]{0,0 } },
+        //    {1, new int[]{0,0 } },
+        //};
         static void Main(string[] args)
         {
             var matrixSize = Console.ReadLine()
@@ -114,7 +124,7 @@ namespace _08_Rubik_sMatrix
             {
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    if (initialMatrix[row, col] != matrix[row,col])
+                    if (initialMatrix[row, col] != matrix[row, col])
                     {
                         for (int i = 0; i < matrix.GetLength(0); i++)
                         {
