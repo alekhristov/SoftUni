@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-MatchFullName", "RegexLab\01-MatchFullName.csproj", "{4BDB40C9-A287-4F71-AD1C-9AB035F1319E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-MatchPhoneNumber", "02-MatchPhoneNumber\02-MatchPhoneNumber.csproj", "{E9357982-79F7-42C8-9742-9A62D0638598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-MatchHexadecimal", "03-MatchHexadecimal\03-MatchHexadecimal.csproj", "{AD00B88B-8D8E-4007-AEDA-BB3EBBA09A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-MatchDates", "04-MatchDates\04-MatchDates.csproj", "{6F339976-149B-445D-892D-065372053917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-MatchNumbers", "05-MatchNumbers\05-MatchNumbers.csproj", "{95AA2DD5-25BC-4A1F-9D00-910B57F27027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-CameraView", "ConsoleApp1\03-CameraView.csproj", "{673BCDC6-D519-489B-A88F-A4D94E07594D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDB40C9-A287-4F71-AD1C-9AB035F1319E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDB40C9-A287-4F71-AD1C-9AB035F1319E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDB40C9-A287-4F71-AD1C-9AB035F1319E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDB40C9-A287-4F71-AD1C-9AB035F1319E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9357982-79F7-42C8-9742-9A62D0638598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9357982-79F7-42C8-9742-9A62D0638598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9357982-79F7-42C8-9742-9A62D0638598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9357982-79F7-42C8-9742-9A62D0638598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD00B88B-8D8E-4007-AEDA-BB3EBBA09A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD00B88B-8D8E-4007-AEDA-BB3EBBA09A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD00B88B-8D8E-4007-AEDA-BB3EBBA09A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD00B88B-8D8E-4007-AEDA-BB3EBBA09A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F339976-149B-445D-892D-065372053917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F339976-149B-445D-892D-065372053917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F339976-149B-445D-892D-065372053917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F339976-149B-445D-892D-065372053917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95AA2DD5-25BC-4A1F-9D00-910B57F27027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95AA2DD5-25BC-4A1F-9D00-910B57F27027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95AA2DD5-25BC-4A1F-9D00-910B57F27027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95AA2DD5-25BC-4A1F-9D00-910B57F27027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673BCDC6-D519-489B-A88F-A4D94E07594D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673BCDC6-D519-489B-A88F-A4D94E07594D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673BCDC6-D519-489B-A88F-A4D94E07594D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673BCDC6-D519-489B-A88F-A4D94E07594D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
